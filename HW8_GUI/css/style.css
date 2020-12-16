@@ -1,0 +1,41 @@
+#div1, #div2, #div3, #div4, #div5, #div6, #div7 {
+  float: left;
+  width: 70px;
+  height: 75px;
+  margin: 10px;
+  border: .5px solid black;
+}
+
+#board1, #board2, #board3, #board4, #board5, #board6, #board7{
+  float: right;
+  width: 85px;
+  height: 90px;
+  align-self: auto;
+border: 1px solid black;
+}
+
+#board1, #board3, #board4, #board5, #board7{
+  background-image: url("images/tile.jpg");
+  background-repeat: no-repeat;
+}
+
+#board2, #board6{
+  background-image: url("images/double-tile.jpg");
+  background-repeat: no-repeat;
+}
+
+.board{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.tiles{
+  background-image: url("images/wood.png");
+  background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+}

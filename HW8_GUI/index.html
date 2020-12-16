@@ -1,0 +1,85 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css"/>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="js/drop.js"></script>
+<link rel="stylesheet" href="css/style.css">
+  <title>HW 8</title>
+  <!--header code, i used a jumbotron and used a gradient background-->
+  <div style="background: linear-gradient(to top, #cc99ff 0%, #cc6699 100%);" class="jumbotron text-center" >
+    <h1> Scrabble </h1>
+  </div>
+
+</head>
+<body>
+
+  <div class="board">
+
+    <div id = "board1" class="ui-widget-content"></div>
+
+    <div id = "board2" class="ui-widget-content"></div>
+
+    <div id = "board3" class="ui-widget-content"></div>
+
+    <div id = "board4" class="ui-widget-content"></div>
+
+    <div id = "board5" class="ui-widget-content"></div>
+
+    <div id = "board6" class="ui-widget-content"></div>
+
+    <div id = "board7" class="ui-widget-content"></div>
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="tiles">
+
+  <div id="div1" class="ui-widget-content">
+  <img src="js/Scrabble_Tiles/Scrabble_Tile_A.jpg" id="tile_1" alt="Random image" draggable="true" ondragstart="drag(event)" width="70px" height="75px">
+  </div>
+
+  <div id="div2" class="ui-widget-content">
+  <img src="js/Scrabble_Tiles/Scrabble_Tile_B.jpg" id="tile_2" alt="Random image" draggable="true" ondragstart="drag(event)" width="70px" height="75px">
+</div>
+
+
+  <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="js/Scrabble_Tiles/Scrabble_Tile_A.jpg" id="tile_3" alt="Random image" draggable="true" ondragstart="drag(event)" width="70px" height="75px">
+  </div>
+
+  <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="js/Scrabble_Tiles/Scrabble_Tile_A.jpg" id="tile_4" alt="Random image" draggable="true" ondragstart="drag(event)" width="70px" height="75px">
+  </div>
+
+  <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="js/Scrabble_Tiles/Scrabble_Tile_A.jpg" id="tile_5" alt="Random image" draggable="true" ondragstart="drag(event)" width="70px" height="75px">
+  </div>
+
+  <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="js/Scrabble_Tiles/Scrabble_Tile_A.jpg" id="tile_6" alt="Random image" draggable="true" ondragstart="drag(event)" width="70px" height="75px">
+  </div>
+
+  <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="js/Scrabble_Tiles/Scrabble_Tile_A.jpg" id="tile_7" alt="Random image" draggable="true" ondragstart="drag(event)" width="70px" height="75px">
+  </div>
+
+  </div>
+
+  <div align=center>
+<h2> The letter you selected is: <p id="letter"></p> </h2>
+<h2> The number remaining for this letter is: <p id="number_remaining"></p> </h2>
+<h2> The count so far is: <p id="count"></p> <p id="count1"></p></h2>
+
+</div>
+</body>
+  <script src="js/randomimage.js"></script>
+
+</html>
