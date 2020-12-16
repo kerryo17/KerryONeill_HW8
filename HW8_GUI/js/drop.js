@@ -529,7 +529,7 @@ $(function () {
       document.getElementById("count1").innerHTML = tiles[random_no7].count;
     },
   });
-});
+}); 
 
 
 
